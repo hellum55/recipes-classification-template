@@ -13,6 +13,9 @@ def estimator_fn(estimator_params: Dict[str, Any] = None) -> Any:
     The estimator's input and output signatures should be compatible with scikit-learn
     estimators.
     """
+    split:
+        split_ratios: [0.75, 0.125, 0.125]
+        post_split_filter_method: create_dataset_filter
     #
     # FIXME::OPTIONAL: return a scikit-learn-compatible classification estimator with fine-tuned
     #                  hyperparameters.

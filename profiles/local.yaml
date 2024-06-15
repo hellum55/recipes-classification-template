@@ -18,10 +18,10 @@ INGEST_CONFIG:
   #
   # FIXME::REQUIRED: Specify the format of the training and evaluation dataset. Natively supported
   #                  formats are: parquet, spark_sql, delta.
-  using: ""
+  using: "csv"
   # FIXME::OPTIONAL: Specify the training and evaluation data location.
-  # location: ""
-
+  location: "C:/Users/Christian/Documents/Cand. merc/Data-Science-Project/data_science_project/Beat the bookies/data/df_preprocessed.csv"
+  loader_method: load_file_as_dataframe
 # INGEST_SCORING_CONFIG:
 #   For different options please read: https://github.com/mlflow/recipes-classification-template#batch-scoring
 #   FIXME::OPTIONAL: Specify the format of the scoring dataset. Natively supported formats are:

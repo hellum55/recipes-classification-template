@@ -18,7 +18,8 @@ INGEST_CONFIG:
   # For different options please read: https://github.com/mlflow/recipes-classification-template#ingest-step
   # FIXME::REQUIRED: Specify the format of the training and evaluation dataset. Natively supported
   #                  formats are: parquet, spark_sql, delta.
-  using: ""
+  using: "spark_sql"
+  sql: SELECT * FROM delta.`dbfs:/df_preprocessed
   # FIXME::OPTIONAL: Specify the training and evaluation data location. This is usually a DBFS
   # location ("dbfs:/...") or a SQL table ("SCHEMA.TABLE").
   # location: ""
